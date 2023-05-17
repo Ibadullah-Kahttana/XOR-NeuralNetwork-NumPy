@@ -5,7 +5,7 @@ Generally, in Classification problems a single perceptron (‘line’) is enough
 In AND & OR gate a single perceptron is enough for correct classification.
 In the case of XOR, a single perceptron isn’t enough to correctly classify it.
  
-<b> Input Data </b>
+Input Data
 We are having X and Y training data.
 X is the testing data for training
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])

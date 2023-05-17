@@ -42,6 +42,7 @@ Biases are added as an extra axis in the X-input
 Neural Network Training:
 
 We use Gradient Descent algorithm to minimize the cost.
+
 •	I perform forward propagation to calculate the output of the network for the input data X.
 •	I then calculate the error between the expected output(y) and the actual output output_layer_output(Y^). 
 •	Then uses the error to calculate the deltas for the output and hidden layers using the sigmoid derivative.

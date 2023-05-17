@@ -5,7 +5,8 @@ Generally, in Classification problems a single perceptron (‘line’) is enough
 In AND & OR gate a single perceptron is enough for correct classification.
 In the case of XOR, a single perceptron isn’t enough to correctly classify it.
  
-Input Data
+Input Data:
+
 We are having X and Y training data.
 X is the testing data for training
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
@@ -14,7 +15,8 @@ Y is for the corrected results according to X array
 	y = np.array([[0], [1], [1], [0]])
 	The matrix is of 4x1.
 
-Network Parameters
+Network Parameters :
+
 The Parameter for the XOR Neural network are.
 Input Neurons = 2
 Hidden Neurons = 2
@@ -27,7 +29,8 @@ F(x) = sigmoid(x) = 1 / 1 + exp(-x)
 Sigmoid_Derivative to return derivative of sigmoid. 
 
 
-Weights and biases
+Weights and biases:
+
 Initially the weight and biases are define randomly using np.random function
 Weights for hidden = W1
 	W1 = 2 x 2	
@@ -36,14 +39,16 @@ Weights for output = W2
 Biases are added as an extra axis in the X-input 
 
 
-Neural Network Training
+Neural Network Training:
+
 We use Gradient Descent algorithm to minimize the cost.
 •	I perform forward propagation to calculate the output of the network for the input data X.
 •	I then calculate the error between the expected output(y) and the actual output output_layer_output(Y^). 
 •	Then uses the error to calculate the deltas for the output and hidden layers using the sigmoid derivative.
 •	Finally, we update the weights using the deltas and the learning rate.
 
-Testing the NN
+Testing the NN:
+
 For Testing neural Network, we have Given inputs ranges with the interval of 0.05 sequentially. 
 •	input1 =[-0.8, 1.2]
 •	input2 =[-0.8, 1.2] 
@@ -60,14 +65,3 @@ B =[-0.8, 1.2]
 With the interval of 0.05 sequentially and draw the output in 3D.
 Learning Rate = 0.1
 We get ideal results showcased in the form of a peak.
-
-
-
-
-
-
-
-
-
-
-
